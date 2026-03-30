@@ -5,8 +5,7 @@ FROM amazoncorretto:17-alpine
 WORKDIR /app
 
 # Copy the built JAR file into the container
-#COPY target/QrCode-0.0.1-SNAPSHOT.jar app.jar
-COPY out/QrCode-0.0.1-SNAPSHOT.jar app.jar
+COPY target/QrCode-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose the application port (Make sure this matches your app's config)
 EXPOSE 9092
