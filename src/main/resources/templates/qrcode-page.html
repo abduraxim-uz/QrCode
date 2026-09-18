@@ -204,7 +204,7 @@
             responseMsg.textContent = '';
             return;
         }
-        const qrApiBase = `${baseURL}/qr/` || 'https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=';
+        const qrApiBase = `${baseURL}/qr?text=` || 'https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=';
         qrImage.src = qrApiBase + encodeURIComponent(inputValue);
         responseMsg.textContent = '';
     });
